@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>KraekenDB API documentation</title>
+    <title>Krakenize API documentation</title>
 
     <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
@@ -26,7 +26,24 @@
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <div class="new-logo">
+        <span class="logo">Krakenize</span>
+      </div>
+
+      <style>
+        @import url(http://fonts.googleapis.com/css?family=Lobster);
+        .new-logo{
+          height: 52px;
+          width: 230px;
+          background: #2467af;
+        }
+        .new-logo .logo{
+          font-family: Lobster;
+          font-size: 33px;
+          padding-left: 32px;
+          color: #222;
+        }
+      </style>
         <div class="lang-selector">
               <a href="#" data-language-name="javascript">javascript</a>
               <a href="#" data-language-name="ruby">ruby</a>
@@ -50,9 +67,9 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the KrakenDB API! You can use our API to access Kraken API endpoints.</p>
+<p>Welcome to the Krakenize API! You can use our API to access Kraken API endpoints.</p>
 
-<p>KrakenDB focused on delivering best and most reliable source for their applications that will not only keep data, but also secure it and offer other possibilities to ease life of mobile developers.</p>
+<p>Krakenize focused on delivering best and most reliable source for their applications that will not only keep data, but also secure it and offer other possibilities to ease life of mobile developers.</p>
 
 <p>We have language bindings in Javascript, Ruby, Python, Java and Obj-c! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
@@ -79,9 +96,9 @@
 <p>Make sure to replace <code class="prettyprint">APIKEY</code> with your API key.</p>
 </blockquote>
 
-<p>KrakenDB uses API keys to allow access to the API. You can register a new KrakenDB API key at our <a href="http://krakendb.io/developers">developer portal</a>.</p>
+<p>Krakenize uses API keys to allow access to the API. You can register a new Krakenize API key at our <a href="http://krakenize.io/developers">developer portal</a>.</p>
 
-<p>KrakenDB expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>Krakenize expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
 
 <p><code class="prettyprint">Authorization: APIKEY</code></p>
 
@@ -132,7 +149,7 @@ You must replace `APIKEY` with your personal API key.
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://krakendb.io/api/1/{appname}/{tablename}</code></p>
+<p><code class="prettyprint">GET http://krakenize.io/api/1/{appname}/{tablename}</code></p>
 
 <h3 id="query-parameters">Query Parameters</h3>
 
@@ -192,7 +209,7 @@ Remember — a happy kitten is an authenticated kitten!
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">GET http://krakendb.io/api/1/{appname}/{tablename}/{objectId}</code></p>
+<p><code class="prettyprint">GET http://krakenize.io/api/1/{appname}/{tablename}/{objectId}</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -237,7 +254,7 @@ Remember — a happy kitten is an authenticated kitten!
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">POST http://krakendb.io/api/1/{appname}/{tablename}</code></p>
+<p><code class="prettyprint">POST http://krakenize.io/api/1/{appname}/{tablename}</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -286,7 +303,7 @@ Remember — a happy kitten is an authenticated kitten!
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">DELETE http://krakendb.io/api/1/{appname}/{tablename}/{objectId}</code></p>
+<p><code class="prettyprint">DELETE http://krakenize.io/api/1/{appname}/{tablename}/{objectId}</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -331,7 +348,7 @@ Remember — a happy kitten is an authenticated kitten!
 
 <h3 id="http-request">HTTP Request</h3>
 
-<p><code class="prettyprint">PUT http://krakendb.io/api/1/{appname}/{tablename}/{objectId}</code></p>
+<p><code class="prettyprint">PUT http://krakenize.io/api/1/{appname}/{tablename}/{objectId}</code></p>
 
 <h3 id="url-parameters">URL Parameters</h3>
 
@@ -349,7 +366,7 @@ Remember — a happy kitten is an authenticated kitten!
 
           <h1 id="errors">Errors</h1>
 
-<p>The KrakenDB API uses the following error codes:</p>
+<p>The Krakenize API uses the following error codes:</p>
 
 <table><thead>
 <tr>
